@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario em JavaScript</title>
+    <link rel="stylesheet" href="Forms/Forms.css">
+    <script src="Forms/Forms.js" defer></script>
+
+</head>
+<body>
+  
+    <h1>Formulario de Contato:</h1>
+    <h5>(*) <span> Campos obrigatórios</span></h5>
+    
+    <form id="form">
+        <div class="barra">
+            <div class="progressBar">  </div>
+        </div>
+
+        <label for="name">Nome:  </label>
+        <input type="text" id="name" placeholder="Digite seu nome..." onchange="uploadBarra()" />
+
+        <label for="email">E-mail: </label>
+        <input type="email" id="email" placeholder="Digite seu e-mail..." />
+
+        <label for="password">Senha: </label>
+        <input type="password" id="password" placeholder="Digite sua senha..." />
+
+        <label for="job"> Seleção de trabalho:  </label>
+        <select name="job" id="job">
+            <option value="">Está em busca de emprego?</option>
+            <option value="yes">Sim</option>
+            <option value="no">Não</option>
+
+        <label for="message"> Mensagem:  </span></label>
+        <textarea name="message" id="message" >Digite algo... </textarea>
+
+        <button type="submit">Enviar</button>
+
+        </select>
+
+
+
+        
+    </form>
+</body>
+</html>

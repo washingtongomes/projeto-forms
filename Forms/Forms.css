@@ -1,0 +1,80 @@
+* {
+    font-size: "Helvética";
+    box-sizing: border-box;
+}
+body{
+    padding: 1rem;
+}
+h1, h5{
+    text-align: center;
+    animation: progress-animation 5s forwards;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 500px;
+    margin: 0 auto;
+}
+
+label{
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+    font-size: .9rem;
+    animation: progress-animation 5s forwards;
+
+}
+
+button{
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+    width: 190px;
+    align-items: center;
+    margin-left: 180px;
+    margin-top: 15px;
+    
+}
+button:hover{
+    background-color: orangered;
+
+}
+span{
+    color: orangered;
+}
+.barra{
+    width: 300px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #CCC;
+    margin-left: 0%;
+    animation: progress-animation 5s forwards;
+
+}
+.progressBar{
+    width: 5%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: orangered;
+    transition: all 300ms;
+    
+}
+
+
+@keyframes progress-animation{
+    0% {width: 10%;}
+    100%{width: 100%;}
+}
